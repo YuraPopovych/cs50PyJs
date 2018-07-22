@@ -1,0 +1,44 @@
+body {
+  background-color: black;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  background-color: orange;
+  margin-bottom: 0;
+}
+
+.container-fluid {
+  color: black;
+  text-align: center;
+}
+
+.container-fluid #bio {
+  height: 550px;
+  background-image: url("../img/boy_and_his_dog_by_qlar.jpg");
+}
+.container-fluid #skills {
+  height: 550px;
+  background-image: url("../img/bash_game.png");
+}
+.container-fluid #experience {
+  background-color: black;
+}
+.container-fluid .container-text {
+  position: relative;
+  top: 30%;
+  color: orange;
+  font-size: 5rem;
+  color: orange;
+}
+.container-fluid .container-text a {
+  color: orange;
+  opacity: 0.3;
+}
+.container-fluid .container-text a:hover {
+  text-decoration: none;
+  opacity: 1;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,74 @@
+@mixin header-style {
+  text-align: center;
+  color: white;
+  background-color: orange;
+}
+
+@mixin container-text-properties {
+    position: relative;
+    top: 30%;
+    color: orange;
+    font-size: 5rem;
+
+}
+
+
+$background-image-height:550px;
+
+
+
+body {
+  background-color: black;
+}
+h1 {
+  @include header-style;
+  margin-bottom: 0;
+}
+
+
+.container-fluid {
+  color:black;
+  text-align: center;
+
+}
+
+
+
+.container-fluid {
+  #bio {
+    height: $background-image-height;
+    ///background-image: url("https://pre00.deviantart.net/f062/th/pre/f/2007/284/5/0/boy_and_his_dog_by_qlar.jpg");
+    background-image: url("../img/boy_and_his_dog_by_qlar.jpg");
+
+  }
+
+  #skills {
+    height: $background-image-height;
+    background-image: url("../img/bash_game.png");
+  }
+
+  #experience  {
+    background-color: black;
+
+
+  }
+
+  .container-text {
+    @include container-text-properties;
+    color: orange;
+      a {
+        color: orange;
+        opacity: .3;
+        &:hover {
+          text-decoration: none;
+          opacity:1;
+        }
+      }
+
+  }
+}
+
+
+
+
+
